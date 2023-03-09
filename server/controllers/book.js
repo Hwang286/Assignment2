@@ -20,7 +20,7 @@ module.exports.displayBookList = (req, res, next) => {
 }
 
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('book/add',{title:'Add Book',
+    res.render('book/add',{title:'Add Contact',
     displayName:req.user?req.user.displayName:''})
 }
 
@@ -50,7 +50,7 @@ module.exports.displayEditPage = (req, res, next) => {
         }
         else {
             res.render('book/edit', {
-                title: 'Edit Book', book: bookToEdit,
+                title: 'Edit Contact', book: bookToEdit,
            displayName:req.user?req.user.displayName:''});
         }
     });
